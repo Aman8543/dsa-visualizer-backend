@@ -7,7 +7,7 @@ const redisClient = require("./database/redis")
 app.use(cookieParser());
 const cors = require("cors")
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://dsa-visualizer-frontend.vercel.app/',
     credentials: true 
 }))
 
@@ -17,6 +17,9 @@ app.use(express.json());
 app.use("/user",userRouter);
 
 
+// app.get("/", (req, res) => {
+//   res.send("Backend is running!");
+// });
 
 
 
