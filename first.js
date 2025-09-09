@@ -8,7 +8,6 @@ app.use(cookieParser());
 const cors = require("cors")
 app.use(cors({
     origin:'https://dsa-visualizer-frontend.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
 
