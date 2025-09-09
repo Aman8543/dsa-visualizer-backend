@@ -7,8 +7,9 @@ const redisClient = require("./database/redis")
 app.use(cookieParser());
 const cors = require("cors")
 app.use(cors({
-    origin: ['https://dsa-visualizer-frontend.vercel.app'],
+    origin:'https://dsa-visualizer-frontend.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }))
 
 app.use(express.json());
